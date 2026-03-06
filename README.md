@@ -99,8 +99,6 @@ QGIS is required for:
 - Land Use / Land Cover (LULC) classification
 - Spatial infrastructure mapping
 
----
-
 ### (ii)Setup Python Environment
 Install the required Python libraries:
 ```bash
@@ -169,9 +167,9 @@ Due to technical limitations, the final predictive outputs were **not fully over
 
 The following analytical outputs were produced:
 
-#### Population Forecasting
+#### (i)Population Forecasting
 
-Charts and dashboards displaying:
+Results displaying:
 
 - Historical population growth trends  
 - Predicted population expansion for future years  
@@ -179,9 +177,9 @@ Charts and dashboards displaying:
 
 ---
 
-#### Water Availability & Allocation Analysis
+#### (ii)Water Availability & Allocation Analysis
 
-Dashboards presenting:
+Results presenting:
 
 - Predicted groundwater availability
 - Water demand projections based on population growth
@@ -189,7 +187,7 @@ Dashboards presenting:
 
 ---
 
-#### Road Network & Traffic Analysis
+#### (iii)Road Network & Traffic Analysis
 
 Traffic analytics were visualized using:
 
@@ -201,7 +199,7 @@ These insights help identify **potential congestion points and infrastructure ex
 
 ---
 
-### Planning Insights
+### (iv)Planning Insights
 
 The visualization results support planners in understanding:
 
@@ -214,8 +212,6 @@ The visualization results support planners in understanding:
 ## 🛠️ Usage & Workflow
 
 The project follows a structured workflow involving satellite data processing, machine learning models, and GIS visualization.
-
----
 
 ### (i)Satellite Data Preprocessing
 
