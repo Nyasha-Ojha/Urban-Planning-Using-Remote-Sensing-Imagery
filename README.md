@@ -40,33 +40,6 @@ The haphazard infrastructural design of this area highlights the urgent need for
 
 ---
 
-## 🛠️ Tech Stack
-* **GIS Tools:** QGIS, Bhuvan NRSC Geoportal.
-* **Data Sources:** Sentinel-2A Satellite Imagery, Census of India (1961–2011).
-* **Programming:** Python (Pandas, Scikit-learn, XGBoost, LightGBM).
-* **Machine Learning:** Multilayer Perceptron (MLP), SVM, Ridge Regression.
-
----
-
-## 👥 Team Members (Group EPICS226)
-* **Nyasha Ojha:** Project Lead & Population Forecasting.
-* **Anushka Mandekar:** LULC Classification & Mapping.
-* **Dhaani Bahl:** Model Optimization & Research.
-* **Riya Mandaogade:** Traffic Forecasting & Road Analysis.
-* **Aastha Pancholi:** Traffic Data Structuring.
-* **Devansh Kalura:** MLP Model Development (Healthcare/Schools).
-* **Parth Sharma:** Data Normalization & Error Handling.
-* **Namrata Bhutani:** Groundwater Assessment & Research.
-* **Suhani Tiwari:** Water Management & ML Pipeline.
-* **Divyansh Sinha:** Data Collection & Integration.
-
----
-
-## 📈 Future Scope
-* Integration of real-time traffic data via APIs.
-* Implementation of **ConvLSTM** (Deep Learning) for more accurate spatio-temporal land growth predictions.
-* Developing a public-facing dashboard for local municipal authorities in Sehore and Bhopal.
-
   # 🤖 Machine Learning Pipeline Architecture
 
 ```mermaid
@@ -104,3 +77,236 @@ I3 --> J
 
 J --> K[GIS Spatial Mapping]
 K --> L[QGIS / Tableau / Power BI Dashboards]
+
+---
+
+## 🛠️ Tech Stack
+* **GIS Tools:** QGIS, Bhuvan NRSC Geoportal.
+* **Data Sources:** Sentinel-2A Satellite Imagery, Census of India (1961–2011).
+* **Programming:** Python (Pandas, Scikit-learn, XGBoost, LightGBM).
+* **Machine Learning:** Multilayer Perceptron (MLP), SVM, Ridge Regression.
+
+---
+
+# ⚙️ Installation & Setup
+
+To run the project locally, follow the steps below.
+
+## 1. Install QGIS (GIS Processing)
+Download and install the **Long Term Release (LTR)** version of QGIS from:
+https://qgis.org
+QGIS is required for:
+- Satellite image preprocessing
+- Land Use / Land Cover (LULC) classification
+- Spatial infrastructure mapping
+
+---
+
+## 2. Setup Python Environment
+Install the required Python libraries:
+```bash
+pip install pandas scikit-learn tensorflow xgboost lightgbm
+
+---
+
+# 8️⃣ Data Acquisition
+
+```markdown
+# 📡 Data Acquisition
+
+Satellite and geospatial data used in this project were obtained from the following sources.
+
+## Satellite Imagery
+
+Primary imagery source:
+
+- **Sentinel-2A satellite imagery**
+
+Download sources:
+
+- Copernicus Open Access Hub
+- Bhuvan NRSC Geoportal
+
+These datasets provide **multi-spectral satellite imagery** required for LULC classification and terrain analysis.
+
+---
+
+## Required Spectral Bands
+
+The following bands were used during preprocessing:
+
+- **B02 – Blue**
+- **B03 – Green**
+- **B04 – Red**
+- **B08 – Near Infrared**
+
+These bands are essential for detecting:
+
+- Vegetation cover
+- Water bodies
+- Built-up urban regions
+
+---
+
+## Data Extraction
+
+Satellite downloads typically contain **200+ files per dataset**.
+
+Steps:
+
+1. Download imagery archive
+2. Extract ZIP files
+3. Import the required spectral bands into **QGIS**
+
+---
+
+# 📊 Visualization
+
+The outputs from the machine learning models were visualized using a combination of **GIS tools and analytical dashboards** to interpret urban development trends and infrastructure needs.
+
+Due to technical limitations, the final predictive outputs were **not fully overlaid on satellite imagery**. Instead, the results were presented through **data visualization platforms and analytical dashboards**.
+
+---
+
+## Visualization Outputs
+
+The following analytical outputs were produced:
+
+### Population Forecasting
+
+Charts and dashboards displaying:
+
+- Historical population growth trends  
+- Predicted population expansion for future years  
+- Urban expansion indicators for the Sehore region  
+
+---
+
+### Water Availability & Allocation Analysis
+
+Dashboards presenting:
+
+- Predicted groundwater availability
+- Water demand projections based on population growth
+- Water allocation requirements for sustainable urban planning
+
+---
+
+### Road Network & Traffic Analysis
+
+Traffic analytics were visualized using:
+
+- Vehicle flow estimates based on **AVRR (Average Vehicle Run Rate)**
+- Peak traffic estimations using **Peak Hour Factor (PHF)**
+- Predicted road capacity requirements for future population growth
+
+These insights help identify **potential congestion points and infrastructure expansion needs**.
+
+---
+
+## Planning Insights
+
+The visualization results support planners in understanding:
+
+- Future **urban population growth**
+- **Water sustainability challenges**
+- **Transportation infrastructure requirements**
+
+---
+
+# 🛠️ Usage & Workflow
+
+The project follows a structured workflow involving satellite data processing, machine learning models, and GIS visualization.
+
+---
+
+## 1. Satellite Data Preprocessing
+
+Steps performed in QGIS:
+
+1. Import satellite imagery
+2. Extract required spectral bands
+3. Run the **Semi-Automatic Classification Plugin (SCP)**
+
+This enables **Land Use / Land Cover (LULC) classification**.
+
+---
+
+## 2. Model Execution
+
+### Population Forecasting
+
+Run the population prediction script:
+
+```bash
+python population_forecast.py
+
+---
+
+# ⚠️ Challenges
+
+During development, several practical challenges were encountered.
+
+---
+
+## Data Gaps
+
+Some historical datasets contained **missing or incomplete records**.
+
+To address this, **data interpolation techniques** were applied to maintain continuity for model training.
+
+---
+
+## Software Compatibility
+
+Different **QGIS versions** caused compatibility issues with certain plugins used during classification.
+
+This required adjustments in plugin configurations and workflow steps.
+
+---
+
+## 📈 Future Scope
+* Integration of real-time traffic data via APIs.
+* Implementation of **ConvLSTM** (Deep Learning) for more accurate spatio-temporal land growth predictions.
+* Developing a public-facing dashboard for local municipal authorities in Sehore and Bhopal.
+
+---
+
+## 👥 Team Members (Group EPICS226)
+* **Nyasha Ojha:** Project Lead & Population Forecasting.
+* **Anushka Mandekar:** LULC Classification & Mapping.
+* **Dhaani Bahl:** Model Optimization & Research.
+* **Riya Mandaogade:** Traffic Forecasting & Road Analysis.
+* **Aastha Pancholi:** Traffic Data Structuring.
+* **Devansh Kalura:** MLP Model Development (Healthcare/Schools).
+* **Parth Sharma:** Data Normalization & Error Handling.
+* **Namrata Bhutani:** Groundwater Assessment & Research.
+* **Suhani Tiwari:** Water Management & ML Pipeline.
+* **Divyansh Sinha:** Data Collection & Integration.
+
+---
+
+# 📜 License
+
+This project is released under the **MIT License**.
+
+The repository is intended for:
+
+- Academic research
+- Community development
+- Educational purposes
+
+---
+
+# 📚 References
+
+Datasets and research sources used in this project include:
+
+- **Bhuvan Geoportal**
+- **Geoportal Madhya Pradesh**
+- **Central Ground Water Board (CGWB)**
+
+The methodology and models are supported by **30+ academic research papers on GIS, remote sensing, and machine learning for urban planning**.
+
+A full reference list is available in the **project report**.
+
