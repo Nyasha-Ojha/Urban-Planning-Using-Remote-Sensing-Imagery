@@ -13,8 +13,6 @@ The terrain of Madhya Pradesh (MP) presents unique geographical and structural c
 * **Rapid Semi-Urban Transition:** Regions like Sehore are transitioning from agricultural hubs to industrial/residential extensions of Bhopal. Without the GIS-based monitoring used in this project, this "urban sprawl" risks destroying fertile land and depleting the local water table.
 * **Resource Distribution:** The vast, often uneven landscape makes traditional physical surveying slow and expensive. Remote Sensing provides a cost-effective way to monitor forest cover, wasteland, and built-up areas across the state’s challenging terrain.
 
-
-
 ---
 
 ## 🧪 Personal Case Study: The Catalyst for Change
@@ -107,12 +105,13 @@ QGIS is required for:
 Install the required Python libraries:
 ```bash
 pip install pandas scikit-learn tensorflow xgboost lightgbm
+```
 
 ---
 
 # 8️⃣ Data Acquisition
 
-```markdown
+
 # 📡 Data Acquisition
 
 Satellite and geospatial data used in this project were obtained from the following sources.
@@ -241,6 +240,7 @@ Run the population prediction script:
 
 ```bash
 python population_forecast.py
+```
 
 ---
 
@@ -287,9 +287,17 @@ This required adjustments in plugin configurations and workflow steps.
 
 ---
 
-# 📜 License
+## Acknowledgement
 
-This project is released under the **MIT License**.
+We would like to sincerely thank our project supervisor **Mr. Vijendra Singh Brahme** for his invaluable guidance, support, and mentorship throughout the development of this project.
+
+His insights in geospatial analysis, research direction, and problem formulation helped shape the overall structure and objectives of the system. His continuous feedback and encouragement enabled our team to successfully implement and complete this research project.
+
+We are grateful for the opportunity to work under his supervision and for the knowledge and perspective he shared with us during the course of this work.
+
+---
+
+# 📜 License
 
 The repository is intended for:
 
