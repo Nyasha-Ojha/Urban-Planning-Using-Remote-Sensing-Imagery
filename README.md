@@ -87,11 +87,11 @@ K --> L[QGIS / Tableau / Power BI Dashboards]
 
 ---
 
-# ⚙️ Installation & Setup
+## Installation & Setup
 
 To run the project locally, follow the steps below.
 
-## (i)Install QGIS (GIS Processing)
+### (i)Install QGIS (GIS Processing)
 Download and install the **Long Term Release (LTR)** version of QGIS from:
 https://qgis.org
 QGIS is required for:
@@ -101,7 +101,7 @@ QGIS is required for:
 
 ---
 
-## (ii)Setup Python Environment
+### (ii)Setup Python Environment
 Install the required Python libraries:
 ```bash
 pip install pandas scikit-learn tensorflow xgboost lightgbm
@@ -109,11 +109,11 @@ pip install pandas scikit-learn tensorflow xgboost lightgbm
 
 ---
 
-# 📡 Data Acquisition
+## 📡 Data Acquisition
 
 Satellite and geospatial data used in this project were obtained from the following sources.
 
-## Satellite Imagery
+### Satellite Imagery
 
 Primary imagery source:
 
@@ -128,7 +128,7 @@ These datasets provide **multi-spectral satellite imagery** required for LULC cl
 
 ---
 
-## Required Spectral Bands
+### Required Spectral Bands
 
 The following bands were used during preprocessing:
 
@@ -145,7 +145,7 @@ These bands are essential for detecting:
 
 ---
 
-## Data Extraction
+### Data Extraction
 
 Satellite downloads typically contain **200+ files per dataset**.
 
@@ -157,7 +157,7 @@ Steps:
 
 ---
 
-# 📊 Visualization
+## 📊 Visualization
 
 The outputs from the machine learning models were visualized using a combination of **GIS tools and analytical dashboards** to interpret urban development trends and infrastructure needs.
 
@@ -165,11 +165,11 @@ Due to technical limitations, the final predictive outputs were **not fully over
 
 ---
 
-## Visualization Outputs
+### Visualization Outputs
 
 The following analytical outputs were produced:
 
-### Population Forecasting
+#### Population Forecasting
 
 Charts and dashboards displaying:
 
@@ -179,7 +179,7 @@ Charts and dashboards displaying:
 
 ---
 
-### Water Availability & Allocation Analysis
+#### Water Availability & Allocation Analysis
 
 Dashboards presenting:
 
@@ -189,7 +189,7 @@ Dashboards presenting:
 
 ---
 
-### Road Network & Traffic Analysis
+#### Road Network & Traffic Analysis
 
 Traffic analytics were visualized using:
 
@@ -201,7 +201,7 @@ These insights help identify **potential congestion points and infrastructure ex
 
 ---
 
-## Planning Insights
+### Planning Insights
 
 The visualization results support planners in understanding:
 
@@ -211,27 +211,26 @@ The visualization results support planners in understanding:
 
 ---
 
-# 🛠️ Usage & Workflow
+## 🛠️ Usage & Workflow
 
 The project follows a structured workflow involving satellite data processing, machine learning models, and GIS visualization.
 
 ---
 
-## (i)Satellite Data Preprocessing
+### (i)Satellite Data Preprocessing
 
 Steps performed in QGIS:
 
-1. Import satellite imagery
-2. Extract required spectral bands
-3. Run the **Semi-Automatic Classification Plugin (SCP)**
+(1) Import satellite imagery
+(2) Extract required spectral bands
+(3) Run the **Semi-Automatic Classification Plugin (SCP)**
 
 This enables **Land Use / Land Cover (LULC) classification**.
 
----
 
-## (ii)Model Execution
+### (ii)Model Execution
 
-### Population Forecasting
+#### Population Forecasting
 
 Run the population prediction script:
 
@@ -241,21 +240,19 @@ python population_forecast.py
 
 ---
 
-# ⚠️ Challenges
+## ⚠️ Challenges
 
 During development, several practical challenges were encountered.
 
----
 
-## Data Gaps
+### (i)Data Gaps
 
 Some historical datasets contained **missing or incomplete records**.
 
 To address this, **data interpolation techniques** were applied to maintain continuity for model training.
 
----
 
-## Software Compatibility
+### (ii)Software Compatibility
 
 Different **QGIS versions** caused compatibility issues with certain plugins used during classification.
 
@@ -294,7 +291,7 @@ We are grateful for the opportunity to work under his supervision and for the kn
 
 ---
 
-# 📜 License
+## 📜 License
 
 The repository is intended for:
 
@@ -304,7 +301,7 @@ The repository is intended for:
 
 ---
 
-# 📚 References
+## 📚 References
 
 Datasets and research sources used in this project include:
 
