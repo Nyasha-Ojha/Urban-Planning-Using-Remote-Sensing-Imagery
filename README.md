@@ -91,7 +91,7 @@ K --> L[QGIS / Tableau / Power BI Dashboards]
 
 To run the project locally, follow the steps below.
 
-## 1. Install QGIS (GIS Processing)
+## (i)Install QGIS (GIS Processing)
 Download and install the **Long Term Release (LTR)** version of QGIS from:
 https://qgis.org
 QGIS is required for:
@@ -101,16 +101,13 @@ QGIS is required for:
 
 ---
 
-## 2. Setup Python Environment
+## (ii)Setup Python Environment
 Install the required Python libraries:
 ```bash
 pip install pandas scikit-learn tensorflow xgboost lightgbm
 ```
 
 ---
-
-# 8️⃣ Data Acquisition
-
 
 # 📡 Data Acquisition
 
@@ -154,9 +151,9 @@ Satellite downloads typically contain **200+ files per dataset**.
 
 Steps:
 
-1. Download imagery archive
-2. Extract ZIP files
-3. Import the required spectral bands into **QGIS**
+(1) Download imagery archive
+(2) Extract ZIP files
+(3) Import the required spectral bands into **QGIS**
 
 ---
 
@@ -220,7 +217,7 @@ The project follows a structured workflow involving satellite data processing, m
 
 ---
 
-## 1. Satellite Data Preprocessing
+## (i)Satellite Data Preprocessing
 
 Steps performed in QGIS:
 
@@ -232,7 +229,7 @@ This enables **Land Use / Land Cover (LULC) classification**.
 
 ---
 
-## 2. Model Execution
+## (ii)Model Execution
 
 ### Population Forecasting
 
