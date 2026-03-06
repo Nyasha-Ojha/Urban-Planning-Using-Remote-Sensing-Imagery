@@ -149,9 +149,9 @@ Satellite downloads typically contain **200+ files per dataset**.
 
 Steps:
 
-- (1) Download imagery archive
-- (2) Extract ZIP files
-- (3) Import the required spectral bands into **QGIS**
+- Download imagery archive
+- Extract ZIP files
+- Import the required spectral bands into **QGIS**
 
 ---
 
