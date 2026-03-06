@@ -77,6 +77,7 @@ I3 --> J
 
 J --> K[GIS Spatial Mapping]
 K --> L[QGIS / Tableau / Power BI Dashboards]
+```
 
 ---
 
